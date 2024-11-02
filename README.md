@@ -1,6 +1,9 @@
 # gfinance_automation
 
 ## Clone the Repositories
+```sh
+git clone https://github.com/sopayyy/gfinance_automation.git
+```
 ## Install
 
 ```sh
