@@ -7,8 +7,8 @@ test('Search for a stock on Google Finance', async ({ page }) => {
     await financePage.searchForStock(stockSymbol);
     await financePage.verifyStockPageLoaded(stockSymbol);
 
-    today = await financePage.todayHighValues()
+    const today = await financePage.todayHighValues()
     await financePage.ytdButton.click();
-    ytd = await financePage.ytdHighValues();
+    const ytd = await financePage.ytdHighValues();
     await financePage.compareValue(today, ytd);   
 });
